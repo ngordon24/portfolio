@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans serif";
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #090b0c;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 99px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background-color: #090b0c;
+}
+
+.name {
+  font-size: 1.5em;
+  color: #fff;
+  user-select: none;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #933fa2;
+  border-radius: 5px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+.header-text {
+  font-size: 30px;
+  position: relative;
+  right: 225px;
+  top: 20px;
+  color: #933fa2;
+  font-size: 20px;
+  border-image: linear-gradient(to bottom, #933fa2, rgba(0, 0, 0, 0)) 1 100%;
+  padding: 10px;
+  border-width: 10px;
+  border-style: solid;
+  width: 450px;
+  text-align: inherit;
+}
+
+.welcome-message {
+  color: #fff;
+}
+.passion-text {
+  color: #fff;
+}
+
+.header-text:hover {
+  transform: scale(1.09);
+  transition: transform 0.5s;
+}
+.Skill-Header {
+  color: #933fa2;
+  font-size: 80px;
+  margin-top: -200px;
+  right: 200px;
+}
+.fa-python {
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  left: 650px;
+  top: 325px;
+}
+.fa-python:hover {
+  color: #933fa2;
+  transform: rotate(30deg);
+  transition: transform 0.5s;
+}
+.fa-database {
+  color: #fff;
+  font-size: 85px;
+  position: absolute;
+  top: 335px;
+  left: 790px;
+}
+.fa-database:hover {
+  color: #933fa2;
+  transform: rotate(30deg);
+  transition: transform 0.5s;
+}
+
+.fa-html5 {
+  color: #fff;
+  font-size: 90px;
+  position: absolute;
+  top: 333px;
+  left: 925px;
+}
+.fa-html5:hover {
+  color: #933fa2;
+  transform: rotate(30deg);
+  transition: transform 0.5s;
+}
+
+.fa-css3-alt {
+  color: #fff;
+  font-size: 90px;
+  position: absolute;
+  top: 333px;
+  right: 175px;
+}
+.fa-css3-alt:hover {
+  color: #933fa2;
+  transform: rotate(30deg);
+  transition: transform 0.5s;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-flex;
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 10s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+.proj-sect {
+  text-align: center;
+  position: absolute;
+  font-size: 90px;
+  color: #933fa2;
+  top: 700px;
+}
+.link-python {
+  position: absolute;
+  top: 875px;
+  left: 100px;
+  font-size: 50px;
+  color: #fff;
+}
